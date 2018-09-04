@@ -1,0 +1,17 @@
+
+  <!-- Breadcrumbs-->
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="#">Restaurant </a>
+      </li>
+      <li class="breadcrumb-item active">Overview</li>
+    </ol>
+    <div class="row">
+        <div class="col-sm-12">
+            <p>Restaurant Component</p>
+            <select>
+                <option *ngFor="let i of months">{{i}}</option>
+            </select>
+            <button (click) = "myClickFunction($event)">Click Me</button>
+        </div>
+    </div>

@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppRestaurantComponent implements OnInit {
 
+  // months=['jan','feb'];
+  // isavailabe=true;
   constructor() { }
-
   ngOnInit() {
-  }
 
+  }
+//   myClickFunction(event) {
+//     alert("Button is clicked");
+//     console.log(event);
+//  }
 }
