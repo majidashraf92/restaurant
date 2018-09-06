@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RecordService } from './record.service'
 import { Router,RouterModule} from '@angular/router';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,7 +11,7 @@ export class AppComponent {
   constructor(private getJsondata:RecordService,private router: Router)
   {
    
-    console.log('url',); 
+    console.log('url',this.router.url); 
   }
   ngOnInit()
   {

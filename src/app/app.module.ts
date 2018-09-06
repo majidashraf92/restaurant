@@ -11,6 +11,9 @@ import { RecordService } from './record.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
+import { AuthGuard } from './auth.guard';
+import { AuthService } from './auth.service';
+import { LogoutComponent } from './logout/logout.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +22,8 @@ import { AdminComponent } from './admin/admin.component';
     SidebarComponent,
     FooterComponent,
     LoginComponent,
-    AdminComponent
+    AdminComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +31,7 @@ import { AdminComponent } from './admin/admin.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [RecordService],
+  providers: [RecordService,AuthService,AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
