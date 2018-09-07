@@ -29,5 +29,14 @@ export class AuthService {
         password
       })
   }
+  registerUser(firstName,lastName,email,password)
+  {
+    return this.http.post<responseParameters>('/api/login.php',{
+      firstName,
+      lastName,
+      email,
+      password
+    })
+  }
 
 }
